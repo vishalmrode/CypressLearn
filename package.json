@@ -1,0 +1,14 @@
+{
+  "name": "cypresslearn",
+  "version": "1.0.0",
+  "description": "Testing automation Learning using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vishal Rode",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.13.1"
+  }
+}
