@@ -2,7 +2,7 @@
 
 describe('handle dropdowns',()=>{
 
-    it.skip('Dropdown with select', ()=>{
+    it('Dropdown with select', ()=>{
 
         cy.visit("https://www.zoho.com/commerce/free-demo.html")
 
@@ -12,7 +12,7 @@ describe('handle dropdowns',()=>{
     })
 
 
-    it.skip('Dropdown without select', ()=>{
+    it('Dropdown without select', ()=>{
 
         cy.visit("https://www.dummyticket.com/dummy-ticket-for-visa-application/")
 
@@ -24,7 +24,7 @@ describe('handle dropdowns',()=>{
         .should('have.text','Italy')
     })
 
-    it.skip('Auto suggest dropdown', ()=>{
+    it('Auto suggest dropdown', ()=>{
 
         cy.visit("https://www.wikipedia.org/")
 
@@ -42,7 +42,7 @@ describe('handle dropdowns',()=>{
 
         cy.wait(3000)
 
-        cy.get('div.wM6W7d>span').should('have.length',11)
+        cy.get('div.wM6W7d>span').should('have.length',13)
         
         cy.get('div.wM6W7d>span').each( ($el, index, $list)=>{
                 if($el.text()=='cypress automation tutorial')
